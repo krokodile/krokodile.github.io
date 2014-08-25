@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Сообщения</title>
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link type="text/css" rel="stylesheet" href="http://st0.vk.me/css/al/tooltips.css">
+	<script>
+		var vk = {};
+		window.locDomain = 'localhost';
+	</script>
+	<script type="text/javascript" src="http://vk.com/js/al/common.js"></script>
+</head>
+<body onresize="onBodyResize()">
+	<script type="text/javascript">domStarted();</script>
+	<div id="stl_left" class="stl_active"><nobr id="stl_text">Наверх</nobr></div>
+	<div class="scroll_fix_wrap" id="page_wrap">
+		<div>
+			<div class="scroll_fix">
+				<div id="header">
+					<div id="page_fix_size" class="module_im">
+						<div class="content module_im">
+							<div class="logo logo_module_im">
+								<img src="img/logo.png">
+							</div>
+							<div class="hb_wrap"><h1 class="hb_btn">Сообщения</h1></div>
+							<div class="head_search">
+								<div class="qs_field_wrap">
+									<i class="i_search"></i>
+									<div class="clear"></div>
+									<div class="iwrap">
+										<input type="text" class="textfield" autocomplete="off" id="lm_search_field" placeholder="Поиск">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="page_fix_size" class="module_im">
+					<div id="page_main_wrap" class="module_im">
+						<div class="wide_column module_im">
+							<div class="im_wrap clear_fix">
+								<div class="im_dialogs">
+									<div class="im_dialogs_panel">
+										<i class="i_new_msg"></i>
+										<div class="im_dialogs_search_wrap">
+											<input class="im_dialogs_search" type="text" placeholder="Поиск сообщений">
+										</div>
+									</div>
+									<div class="im_dialogs_wrap" onclick="chooseChat();">
+										<div id="dialogs" class="messages">
+											<div class="dialog_item_colfix">
+												<a class="dialog_item di_unread_inbox" id="dialog_item1">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">15:45</div>
+											  		<div class="dialogs_unread_wrap" id="dialogs_unread_wrap">
+											  			<div class="dialogs_unread">+1</div>
+										  			</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs14115.vk.me/c540106/v540106036/2341a/Y2qo0Hm5oUI.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">Анастасия Фролова  <i id="i_online" onmouseover="fadeIn('tooltipOnline');" onmouseout="fadeOut('tooltipOnline');"></i></div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">Через сколько?</div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+											  <a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">14:40</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs617729.vk.me/v617729693/da7a/srSp7zttTl8.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">Виктория Степанова <i id="i_online_phone"></i></div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">Круто, так намного лучше!</div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">Вчера</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs618931.vk.me/v618931226/11ebb/NfGWrC0CgL4.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">Анатолий Богославский</div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">http://www.youtube.com/watch?v=7QS9hLPFyQ0</div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">27.07.14</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs616223.vk.me/v616223494/19ccb/VCjiJlAdt5M.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont clear_fix">
+												    <div class="di_head">
+												      <div class="mi_author">Михаил Иващенко  <i id="i_online_phone"></i></div>
+												    </div>
+												    <div class="di_body">
+												    	<img class="dialogs_inline_author fl_l" src="http://cs408820.vk.me/v408820827/8cfd/50FRmWYqLvM.jpg">
+												      <div class="di_text inline_author_i">
+												      	Здаров
+												      </div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">27.07.14</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<div class="dialogs_inline_chatter fl_l">
+												  		<img src="http://cs616824.vk.me/v616824390/14706/C6bDmfqJuaM.jpg">
+												  	</div>
+												  	<div class="dialogs_inline_chatter fl_r">
+												  		<img src="http://cs608730.vk.me/v608730291/1519f/hDJZ5naDxhg.jpg">
+												  	</div>
+												  	<div class="dialogs_inline_chatter fl_l">
+												  		<img src="http://cs617729.vk.me/v617729693/da7a/srSp7zttTl8.jpg">
+												  	</div>
+												  	<div class="dialogs_inline_chatter fl_r">
+												  		<img src="http://cs319920.vk.me/v319920397/8c0c/2QNRPX65N18.jpg">
+												  	</div>
+												  </div>
+												  <div class="di_cont clear_fix">
+												    <div class="di_head">
+												      <div class="mi_author"><i class="i_icon_chat"></i> ЛЕТО</i></div>
+												    </div>
+												    <div class="di_body">
+												    	<img class="dialogs_inline_author fl_l" src="http://cs616824.vk.me/v616824390/14706/C6bDmfqJuaM.jpg">
+												      <div class="di_text inline_author">
+												      	<div class="mi_author inline_author_name">Андрей Колесников</i></div>
+												      	поехали на море!
+												      </div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">26.07.14</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs620518.vk.me/v620518027/1070d/6ngoVqVW5oA.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">Марина Бабоева</div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">Вроде да, но у многих в ответе -2 а других просто 2, не знаю какой ответ правильный</div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">26.07.14</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs614618.vk.me/v614618166/eca5/VaHZL_vhi-8.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">John Reof</div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">
+												      	<div class="im_attach_photo"></div>
+												      	Фотография
+												      </div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">26.07.14</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs620320.vk.me/v620320860/afed/zmAM4zsadvM.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">Владислав Тихомир</div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">Да, было</div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+											<div class="dialog_item_colfix">
+												<a class="dialog_item">
+											  	<div class="di_date fl_r">
+											  		<div class="di_date">24.07.14</div>
+									  			</div>
+											  	
+												  <div class="di_iwrap">
+												  	<img src="http://cs320429.vk.me/v320429602/6fe2/9YuL4nhpJf0.jpg" class="di_img">
+												  </div>
+												  <div class="di_cont">
+												    <div class="di_head">
+												      <div class="mi_author">Артем Ворновский</div>
+												    </div>
+												    <div class="di_body">
+												      <div class="di_text">
+												      	<div class="im_attach_audio"></div>
+												      	Аудиозапись
+											      	</div>
+												    </div>
+												  </div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="im_border_dialogs"></div>
+								</div>
+								<div class="im_history">
+					        <div class="im_history_not_selected" id="im_not_choose_chat">
+					          Пожалуйста, выберите чат, чтобы начать обмен сообщениями
+					        </div>
+								
+									<div class="im_history_panel_wrap im_panel_selected_wrap" id="im_hist_panel_selected" style="display:none">
+									  <div class="im_history_panel clear_fix">
+									    <div class="im_history_panel_title im_selected_title fl_l">
+									      <h4 id="im_count_selected"></h4>
+											</div>
+											<div class="button_blue fl_r">
+					            	<button class="im_select_btn">Переслать..</button>
+					            </div>
+					            <div class="button_blue fl_r">
+					            	<button class="im_select_btn">Ответить</button>
+					            </div>
+					             <div class="button_blue fl_r">
+					            	<button class="im_select_btn">Это спам</button>
+					            </div>
+					            <div class="button_blue fl_r">
+					            	<button class="im_select_btn">Удалить</button>
+					            </div>
+											<div class="button_blue fl_r">
+					            	<button class="im_select_btn"><i class="im_log_fav_btn"></i></button>
+					            </div>	
+										</div>
+									</div>
+									<div id="im_history_show">
+										<div class="im_history_panel_wrap" id="im_hist_panel">
+										  <div class="im_history_panel clear_fix">
+										    <div class="im_history_panel_title">
+										      <div class="im_history_panel_more fl_r">
+										      	<div>
+									            <div class="i_im_more"></div>
+									            <div class="i_im_more"></div>
+									            <div class="i_im_more"></div>
+								            </div>
+							            	<div class="im_history_panel_dropdown_wrap">
+															<div id="custom_menu_cont">
+																<div id="add_media_menu_3" class="add_media_menu " style="position: absolute;margin-left: -166px;width: 205px;margin-top:-20px;font-size: 13px;">
+																	<div class="add_media_rows" style="margin-top: -4px; display: block; position: static;">
+																		<div class="rows" style="position: relative;">
+																			<div class="add_media_items">			
+																			<div class="add_media_head noselect">				
+														            <div class="i_im_more"></div>
+														            <div class="i_im_more"></div>
+														            <div class="i_im_more"></div>
+																			</div>
+																			<a class="add_media_type_3_photos add_media_item" style="background-image: url(http://vk.com/images/icons/im_actions_iconset2.png?9); background-position: 3px -213px;">
+																				<nobr>Показать материалы из беседы</nobr>
+																			</a>
+																			<a class="add_media_type_3_search add_media_item" style="background-image: url(http://vk.com/images/icons/im_actions_iconset2.png?9); background-position: 3px -171px;">
+																				<nobr>Поиск по истории сообщений</nobr>
+																			</a>
+																			<a class="add_media_type_3_history add_media_item" style="background-image: url(http://vk.com/images/icons/im_actions_iconset2.png?9); background-position: 3px -41px;">
+																				<nobr>Показать всю историю сообщений</nobr>
+																			</a>
+																			<a class="add_media_type_3_clear add_media_item" style="background-image: url(http://vk.com/images/icons/im_actions_iconset2.png?9); background-position: 3px -63px;">
+																				<nobr>Очистить историю сообщений</nobr>
+																			</a>
+																		</div>
+																	</div>
+																	</div>
+																</div>
+															</div>
+						            		</div>
+									     		</div>
+										      <h4>Анастасия Фролова <i id="i_online"></i></h4>
+												</div>
+											</div>
+										</div>
+
+	 									<div class="im_history_wrap" style="height:463px;">
+											<div class="im_history_scrollable">
+	                  		<div class="im_history_relative">
+	                    		<div class="im_history_messages" style="margin-top: 0px;">
+
+														<div class="im_history_message_wrap" id="mess1" onclick="msgSelect('mess1')">
+															<div class="im_message_outer_wrap">
+																<div class="im_message_wrap clear_fix">
+															    <div class="im_content_message_wrap im_message_in">
+															      <div class="im_content_message_select_area">
+															        <i class="icon icon-select-tick"></i>
+															    	</div>
+															      <a class="im_message_from_photo fl_l">
+															      	<img class="im_message_from_photo" src="http://cs14115.vk.me/c540106/v540106036/2341a/Y2qo0Hm5oUI.jpg">
+															      </a>
+															      <div class="im_message_meta fl_r text-right">
+															        <span class="im_message_date">13:08:39</span>
+															      </div>
+															      <div class="im_message_body">
+															        <a class="im_message_author">Анастасия Фролова</a>
+															        <div class="im_message_text">
+															        	<div class="audio">
+																				  <div class="area clear_fix">
+																				    <table cellspacing="0" cellpadding="0" width="100%">
+																				      <tbody><tr>
+																				        <td>
+																				          <div class="play_btn">
+																				          	<div class="play_btn_wrap"><div class="play_new"></div></div>    
+																		              </div>
+																				        </td>
+																				        <td class="info">
+																				          <div class="title_wrap fl_l">
+																				          	<b><a href="">Танцпол</a></b> – <span>Record Club #304 (22-06-2014)</span>
+																				        	</div>
+																				          <div class="duration fl_r">1:59:55</div>
+																				        </td>
+																				      </tr>
+																				    </tbody></table>
+																				  </div>
+																				</div>
+															        </div>
+															        <div class="im_message_media">
+															         	<a class="im_message_photo_thumb" href="" style="width: 260px;">
+																				  <img class="im_message_photo_thumb" width="260" height="260" src="http://cs616716.vk.me/v616716827/16ab7/k0_gQOveYLk.jpg">
+																				</a>
+	        														</div>
+															      </div>
+	  															</div>
+																</div>
+															</div>
+														</div>
+														<div class="im_history_message_wrap" id="mess2" onclick="msgSelect('mess2')">
+															<div class="im_message_outer_wrap">
+																<div class="im_message_wrap clear_fix">
+															    <div class="im_content_message_wrap im_message_in">
+															      <div class="im_content_message_select_area">
+															        <i class="icon icon-select-tick"></i>
+															    	</div>
+															      <a class="im_message_from_photo fl_l">
+															      	<img class="im_message_from_photo" src="http://cs408820.vk.me/v408820827/8cfd/50FRmWYqLvM.jpg">
+															      </a>
+															      <div class="im_message_meta fl_r text-right">
+															        <span class="im_message_date">01:08:51</span>
+															      </div>
+															      <div class="im_message_body">
+															        <a class="im_message_author">Артем Богославский</a>
+															        <div class="im_message_text">Отлично, скоро прийду!</div>
+															      </div>
+	  															</div>
+																</div>
+															</div>
+														</div>
+														<div class="im_history_message_wrap" id="mess3" onclick="msgSelect('mess3')">
+															<div class="im_message_outer_wrap">
+																<div class="im_message_wrap clear_fix">
+															    <div class="im_content_message_wrap im_message_in">
+															      <div class="im_content_message_select_area">
+															        <i class="icon icon-select-tick"></i>
+															    	</div>
+															      <a class="im_message_from_photo fl_l">
+															      	<img class="im_message_from_photo" src="http://cs14115.vk.me/c540106/v540106036/2341a/Y2qo0Hm5oUI.jpg">
+															      </a>
+															      <div class="im_message_meta fl_r text-right">
+															        <span class="im_message_date">01:09:08</span>
+															      </div>
+															      <div class="im_message_body">
+															        <a class="im_message_author">Анастасия Фролова</a>
+															        <div class="im_message_text">Через сколько?</div>
+															      </div>
+	  															</div>
+																</div>
+															</div>
+														</div>
+	                    		</div>
+	                 	 		</div>
+	              			</div>
+	 										<div class="fc_scrollbar_cont" style="height: 100%; right: 0px; top: 0px; left: auto; pointer-events: auto;"><div class="fc_scrollbar_inner" style="height: 100px; margin-top: 355px;"></div></div>
+	 									</div>
+										<div class="im_bottom_panel_wrap">
+	            				<div class="im_send_panel_wrap">
+	              				<div class="im_send_form_wrap1">
+	             						<div class="im_send_form_wrap clearfix ng-scope" style="height: 96px;">
+					                  <div class="fl_r im_panel_peer_photo">
+					                    <img class="im_panel_peer_photo" src="http://cs14115.vk.me/c540106/v540106036/2341a/Y2qo0Hm5oUI.jpg">
+					                    <i class="im_status_online"></i>
+					                  </div>
+					                  <div class="fl_l im_panel_own_photo">
+					                    <img class="im_panel_own_photo" src="http://cs408820.vk.me/v408820827/8cfd/50FRmWYqLvM.jpg">
+					                  </div>
+		               				  <div class="im_send_form">
+					                    <div class="im_send_field_wrap">
+					                      <div class="im_send_field_wrap_input">Введите Ваше сообщение..</div>
+					                      <i class="i_control_input"></i>
+					                    </div>
+					                    <div class="clear_fix">
+						                    <div class="im_attach fl_r">
+						                      <i class="i_attach"></i>
+						                    </div>
+						                    <div class="button_blue im_send_cont fl_l">
+										              <button id="im_send">Отправить</button>
+										            </div>
+										            <i class="i_emoji"></i>
+									            </div>
+	                  				</div>
+	                				</div>
+	              				</div>
+	            				</div>
+	          				</div>
+          				</div>
+								</div>
+							</div>
+							<div class="tooltips">
+								<div class="ttb" id="tooltipOnline">
+									<div class="toup">
+										<div class="top_pointer" style="left: 25px;"></div>
+										<div class="ttb_cont">
+											<div class="tt_text">online</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+				  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- DOCK -->
+	<div id="lm_cont">
+		<div class="pcont">
+			<ul class="main_menu">
+				<li class="mmi_profile">
+					<a class="mm_item al_menu" title="Моя страница">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap" title="Редактировать"><i class="i_icon_edit"></i></span>
+					</a>
+				</li>
+				<li class="mmi_friends">
+					<a class="mm_item al_menu" title="Друзья">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap vis"><span class="plus">+</span>32</span>
+					</a>
+				</li>
+				<li class="mmi_photos">
+					<a class="mm_item al_menu" title="Фотографии">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_video">
+					<a class="mm_item al_menu" title="Видеозаписи">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_audio">
+					<a class="mm_item al_menu" title="Аудиозаписи">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"><i class="i_icon_audio"></i></span>
+					</a>
+				</li>
+				<li class="mmi_mail">
+					<a class="mm_item al_menu" title="Сообщения">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap vis" id="panel_msg_wrap"><span class="plus">+</span>1</span>
+					</a>
+				</li>
+				<li class="mmi_groups">
+					<a class="mm_item al_menu" title="Сообщества">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_feed">
+					<a class="mm_item al_menu" title="Новости">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_answers">
+					<a class="mm_item al_menu" title="Ответы">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap">+</span>
+					</a>
+				</li>
+				<li class="mmi_fave">
+					<a class="mm_item al_menu" title="Закладки">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_apps">
+					<a class="mm_item al_menu hover" title="Игры" >
+						<i class="i_icon"></i>
+						<span class="mmi_wrap">+</span>
+					</a>
+				</li>
+				<li class="mmi_search">
+					<a class="mm_item al_menu" title="Поиск">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_settings">
+					<a class="mm_item" title="Настройки">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_help">
+					<a class="mm_item" title="Помощь">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+				<li class="mmi_logout" title="Выйти">
+					<a class="mm_item">
+						<i class="i_icon"></i>
+						<span class="mmi_wrap"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		function chooseChat() {
+			hide('im_not_choose_chat');
+			show('im_history_show');
+			removeClass('panel_msg_wrap', 'vis');
+			val('panel_msg_wrap', '+');
+			hide('dialogs_unread_wrap');
+			addClass('dialog_item1', 'active_dialog');
+		}
+
+		cur.msgSelected = [];
+		function msgSelect(el) {
+			toggleClass(el, 'im_sel_row');
+			
+			var pos = indexOf(cur.msgSelected, el);
+			if(pos != -1) {
+				cur.msgSelected.splice(pos, 1);
+			} else {
+				cur.msgSelected.push(el);
+			}
+
+			if(cur.msgSelected.length) {
+				show('im_hist_panel_selected');
+				hide('im_hist_panel');
+
+				var contText = cur.msgSelected.length > 1 ? ' сообщения' : ' сообщение';
+				var count = cur.msgSelected.length+contText;
+				val('im_count_selected', 'Выделено '+count);
+			} else {
+				hide('im_hist_panel_selected');
+				show('im_hist_panel');
+			}
+		}
+
+		function updSideTopLink() {
+		  var st = scrollGetY(),
+		      sb = ge('lm_cont'),
+		      sbw = getSize(sb)[0],
+		   		pl = ge('page_main_wrap'),
+		   		vis = _stlWas || (st > 200),
+		   		wSide = pl.offsetLeft - sbw;
+
+			if(st > 45) {
+				addClass(_stlSide, 'stl_scroll');
+				addClass('lm_cont', 'stl_scroll');
+			} else {
+				removeClass(_stlSide, 'stl_scroll');
+				removeClass('lm_cont', 'stl_scroll');
+			}
+
+			if(wSide < 20) {
+				hide(_stlSide);
+		    return;
+			}
+			if(wSide < 74) {
+				val(_stlText, '');
+				addClass(_stlText, 'min');
+			} else {
+				removeClass(_stlText, 'min');
+			}
+
+	    setStyle(_stlSide, {
+	      left: sbw,
+	      width: wSide
+	    });
+	    
+			if (!vis) {
+		    if (_stlShown !== 0) {
+		      hide(_stlSide);
+		      _stlShown = 0;
+		    } 
+		  } else {
+		  	if (_stlWas && st > 500) {
+		      _stlWas = 0;
+		    }
+		  	if (_stlShown !== 1) {
+		      show(_stlSide);
+		      _stlShown = 1;
+		    }
+	    	if (st > 200) {
+		      if (_stlWasSet) {
+		        _stlWasSet = 0;
+		        val(_stlText, 'Наверх');
+		        removeClass(_stlText, 'down');
+	  			}
+    		} else {
+			    if (_stlWas && !_stlWasSet) {
+			      _stlWasSet = 1; f = 0;
+			      val(_stlText, '');
+			      addClass(_stlText, 'down');
+			    }
+		  	}
+		  }
+		}
+		function onBodyResize() {
+			updSideTopLink();
+			debugLog('onBodyResize');
+		}
+		extend(window, {
+			_stlSide: ge('stl_left'),
+			_stlText: ge('stl_text'),
+			scrollNode: browser.msie6 ? pageNode : ((browser.chrome || browser.safari) ? bodyNode : htmlNode),
+			stManager: {add: function(f, c){c()}},
+			lastWindowHeight: document.documentElement.clientHeight,
+			lastWindowWidth: document.documentElement.clientWidth,
+			__afterFocus: false,
+			_stlShown: 0,
+	    _stlWas: 0,
+	    _stlWasSet: 0,
+	    _stlBack: 0
+		});
+		addEvent(window, 'scroll', updSideTopLink);
+		addEvent(_stlSide, 'mousedown', _stlMousedown);
+		addEvent(bodyNode, 'onresize', onBodyResize);
+	</script>
+</body></html>
